@@ -1,0 +1,9 @@
+1.
+SELECT * FROM movie WHERE status=available
+ AND (showdate BETWEEN 2020-01-04 AND 2020-01-10);
+
+
+
+2.
+SELECT status, count(status) FROM movie AS available , booked WHERE status=available 
+AND status=booked;
